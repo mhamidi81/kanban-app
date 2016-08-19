@@ -13,7 +13,8 @@
   "keywords": [
     "kanban",
     "reactjs",
-    "flux"
+    "flux",
+    "webpack"
   ],
   "author": "mhamidi",
   "license": "ISC",
