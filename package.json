@@ -1,0 +1,24 @@
+{
+  "name": "kanban_app",
+  "version": "0.0.1",
+  "description": "kanban app by reactJS webpack and flux",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhamidi81/kanban-app.git"
+  },
+  "keywords": [
+    "kanban",
+    "reactjs",
+    "flux"
+  ],
+  "author": "mhamidi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mhamidi81/kanban-app/issues"
+  },
+  "homepage": "https://github.com/mhamidi81/kanban-app#readme"
+}
