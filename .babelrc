@@ -1,0 +1,19 @@
+{
+  "presets": ["stage-1"],
+  "env": {
+    "start": {
+      "presets": ["stage-1", "react"],
+      "plugins": [
+        ["react-transform", 
+          {"transforms": [
+            {
+              "transform": "react-transform-hmr",
+              "imports": ["react"],
+              "locals": ["module"]
+            }
+          ]}
+        ]
+      ]
+    }
+  }
+}

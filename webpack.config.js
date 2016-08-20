@@ -9,9 +9,14 @@ var APP_PATH = path.resolve(ROOT_PATH, 'app');
 var BUILD_PATH = path.resolve(ROOT_PATH, 'build');
 var CSS_PATH = path.resolve(APP_PATH, 'css');
 
+process.env.BABEL_ENV = TARGET;
+
 var common = {
   entry: APP_PATH,
-  
+  resolve: {
+    extensions: ['', '.js', '.jsx']
+  },
+
   output: {
     path: BUILD_PATH,
     filename: 'bundle.js'
@@ -23,6 +28,16 @@ var common = {
         test: /\.css$/,
         loaders: ['style', 'css'],
         include: CSS_PATH
+      },
+
+      {
+        test: /\.jsx?/,
+        include: APP_PATH,
+        excludes: /(node_modules)/,
+        loader: "babel",
+        query: {
+            presets:['react', 'stage-1']
+        }
       }
     ]
   }
